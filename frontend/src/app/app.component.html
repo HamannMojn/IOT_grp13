@@ -1,12 +1,15 @@
 <nav class="navbar">
   <ul class="navbar-nav">
-    <li>Home</li>
-    <li>About</li>
+    <li clas="item">
+      <a>Home</a>
+    </li>
   </ul>
 </nav>
 <header>
-  <img src="..\frontend\src\disco.png">
+  <img [src]="discoball" width="20%" height="20%" class="logo">
   <h1>Disco on demand</h1>
 </header>
-
+<body>
+  <button mat-button color="primary">Turn on Disco Light</button>
+</body>
 

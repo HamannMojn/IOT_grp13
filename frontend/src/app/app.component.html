@@ -12,4 +12,11 @@
 <body>
   <button mat-button color="primary">Turn on Disco Light</button>
 </body>
+<div>
+  <ul class="DiscoBallIPs">
+    <li *ngFor="let ip of discoBallIPList">
+      <span class="badge">{{ip.ipAddress}}</span>
+    </li>
+  </ul>
+</div>
 

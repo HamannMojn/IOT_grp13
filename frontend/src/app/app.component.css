@@ -31,6 +31,7 @@ header {
     text-align: center;
     clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
     
+    
 }
 
 header:hover{
@@ -39,7 +40,11 @@ header:hover{
 }
 
 body{
+    display:flex;
     text-align: center;
+    flex-direction: column;
+    border-radius: 5 px;
+
 }
 button{
     background-color: #e8aeb7ff;
@@ -58,4 +63,10 @@ button:hover{
     to {
         filter: hue-rotate(360deg);
     }
+}
+
+.badge{
+    display: flex;
+    justify-content: center;
+
 }

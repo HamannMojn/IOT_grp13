@@ -10,13 +10,9 @@
   <h1>Disco on demand</h1>
 </header>
 <body>
-  <button mat-button color="primary">Turn on Disco Light</button>
+  <div>
+    <app-ip-list></app-ip-list>
+  </div>  
 </body>
-<div>
-  <ul class="DiscoBallIPs">
-    <li *ngFor="let ip of discoBallIPList">
-      <span class="badge">{{ip.ipAddress}}</span>
-    </li>
-  </ul>
-</div>
+
 

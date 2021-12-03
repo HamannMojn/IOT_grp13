@@ -1,0 +1,28 @@
+.wrapper{
+    display:inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+button{
+    background-color: #e8aeb7ff;
+    margin: 10px;
+}
+
+button:hover{
+    animation: color-rotate 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-rotate
+ {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}

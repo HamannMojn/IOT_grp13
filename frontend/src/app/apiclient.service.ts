@@ -25,18 +25,19 @@ export class ApiclientService {
     );
   }
 
-  turnOn_OffMotor(ip: DiscoBallIP): Observable<DiscoBallIP> {
+  turnOn_OffMotor(ip: DiscoBallIP) {
     return this.http.put<DiscoBallIP>(`${this.apiUrl}/turn_On_Off_Motor`, ip)
-    .pipe(
-      catchError(
-        this.handleError('turn on_off motor', ip)));
+    .subscribe(response => console.log(response))
   }
 
-  turnOn_OffLED(ip: DiscoBallIP): Observable<DiscoBallIP> {
+  turnOn_OffLED(ip: DiscoBallIP) {
     return this.http.put<DiscoBallIP>(`${this.apiUrl}/turn_On_Off_LED`, ip)
-    .pipe(
-      catchError(
-        this.handleError('turn on_off LED', ip)));
+    .subscribe(response => console.log(response))
+  }
+
+  turnOn_OffTempSensor(ip: DiscoBallIP) {
+    return this.http.put<DiscoBallIP>(`${this.apiUrl}/Turn_On_Off_Temp_Sensor`, ip)
+    .subscribe(response => console.log(response))
   }
 
   private handleError<T>(operation = 'operation', result?: T) {

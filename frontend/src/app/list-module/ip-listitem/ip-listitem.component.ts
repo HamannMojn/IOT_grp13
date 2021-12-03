@@ -24,6 +24,11 @@ export class IpListitemComponent implements OnInit {
     this.apiclientservice.turnOn_OffLED(this.discoballIp);
   }
 
+  public SendTempSensor(): void {
+    console.log('Turn on off Temp Sensor', this.discoballIp);
+    this.apiclientservice.turnOn_OffTempSensor(this.discoballIp);
+  }
+
   ngOnInit(): void {
   }
 
